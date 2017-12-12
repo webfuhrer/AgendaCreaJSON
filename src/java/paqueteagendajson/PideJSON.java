@@ -85,7 +85,7 @@ public class PideJSON extends HttpServlet {
             json+="{\"nombre\":"+"\""+c.getNombre()+"\""+", \"telefono\":"+"\""+c.getTelefono()+"\"},";
         }
         json=json.substring(0, json.length()-1);
-        json+="]";
+        json+="]}";
         return json;
     }
 
